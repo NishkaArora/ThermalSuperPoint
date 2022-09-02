@@ -1,4 +1,4 @@
-tensorflow-gpu==2.2.0
+tensorflow-gpu
 numpy
 scipy
 opencv-python==3.4.8.29
