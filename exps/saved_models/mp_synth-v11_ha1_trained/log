@@ -1,0 +1,78 @@
+[11/25/2019 09:08:50 INFO] Running command TRAIN
+[11/25/2019 09:08:50 INFO] Number of GPUs detected: 1
+[11/25/2019 09:08:54 WARNING] From /cluster/apps/python/3.6.4/lib64/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2019-11-25 09:09:52.550937: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-25 09:09:52.917895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0c:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-25 09:09:52.917960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2019-11-25 09:09:54.091006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-25 09:09:54.091063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-11-25 09:09:54.091079: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2019-11-25 09:09:54.092853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0c:00.0, compute capability: 6.1)
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:54 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:55 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+[11/25/2019 09:09:56 INFO] Scale of 0 disables regularizer.
+2019-11-25 09:09:56.129867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2019-11-25 09:09:56.129915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-25 09:09:56.129923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-11-25 09:09:56.129931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2019-11-25 09:09:56.130682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0c:00.0, compute capability: 6.1)
+[11/25/2019 09:10:12 INFO] Start training
+[11/25/2019 09:11:30 INFO] Iter    0: loss 4.5594, precision 0.0022, recall 0.0562
+[11/25/2019 09:28:08 INFO] Iter 1000: loss 1.2502, precision 0.0061, recall 0.1638
+[11/25/2019 09:44:58 INFO] Iter 2000: loss 0.6112, precision 0.0118, recall 0.2972
+[11/25/2019 09:58:05 INFO] Iter 3000: loss 0.5142, precision 0.0146, recall 0.3691
+[11/25/2019 10:04:42 INFO] Iter 4000: loss 0.4383, precision 0.0406, recall 0.3867
+[11/25/2019 10:11:23 INFO] Iter 5000: loss 0.4561, precision 0.0615, recall 0.3981
+[11/25/2019 10:18:21 INFO] Iter 6000: loss 0.4213, precision 0.0601, recall 0.3251
+[11/25/2019 10:25:09 INFO] Iter 7000: loss 0.3795, precision 0.0650, recall 0.4127
+[11/25/2019 10:31:46 INFO] Iter 8000: loss 0.4005, precision 0.1003, recall 0.4271
+[11/25/2019 10:38:34 INFO] Iter 9000: loss 0.3307, precision 0.0847, recall 0.4252
+[11/25/2019 10:45:14 INFO] Iter 10000: loss 0.3998, precision 0.0920, recall 0.4297
+[11/25/2019 10:51:54 INFO] Iter 11000: loss 0.3884, precision 0.0714, recall 0.4241
+[11/25/2019 10:58:33 INFO] Iter 12000: loss 0.4544, precision 0.0796, recall 0.4293
+[11/25/2019 11:05:24 INFO] Iter 13000: loss 0.4349, precision 0.0969, recall 0.4360
+[11/25/2019 11:13:41 INFO] Iter 14000: loss 0.3425, precision 0.0924, recall 0.4379
+[11/25/2019 11:20:41 INFO] Iter 15000: loss 0.3812, precision 0.0869, recall 0.4340
+[11/25/2019 11:27:39 INFO] Iter 16000: loss 0.3806, precision 0.0809, recall 0.4352
+[11/25/2019 11:34:19 INFO] Iter 17000: loss 0.4349, precision 0.0746, recall 0.4278
+[11/25/2019 11:40:58 INFO] Iter 18000: loss 0.3598, precision 0.0883, recall 0.4356
+[11/25/2019 11:47:36 INFO] Iter 19000: loss 0.4696, precision 0.0780, recall 0.4311
+[11/25/2019 11:54:16 INFO] Iter 20000: loss 0.3352, precision 0.0776, recall 0.4327
+[11/25/2019 12:00:54 INFO] Iter 21000: loss 0.3580, precision 0.0829, recall 0.4383
+[11/25/2019 12:07:39 INFO] Iter 22000: loss 0.3888, precision 0.0930, recall 0.4288
+[11/25/2019 12:14:23 INFO] Iter 23000: loss 0.3484, precision 0.1032, recall 0.4481
+[11/25/2019 12:21:09 INFO] Iter 24000: loss 0.4057, precision 0.0660, recall 0.4272
+[11/25/2019 12:27:45 INFO] Training finished
+[11/25/2019 12:27:49 INFO] Saving checkpoint for iteration #25000

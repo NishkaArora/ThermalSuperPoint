@@ -1,0 +1,115 @@
+[09/05/2019 00:05:18 INFO] Running command TRAIN
+[09/05/2019 00:05:18 INFO] Number of GPUs detected: 1
+[09/05/2019 00:05:23 WARNING] From /cluster/home/pautratr/.local/lib64/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+[09/05/2019 00:05:26 INFO] Extracting archive for primitive draw_lines.
+[09/05/2019 00:05:31 INFO] Extracting archive for primitive draw_polygon.
+[09/05/2019 00:05:35 INFO] Extracting archive for primitive draw_multiple_polygons.
+[09/05/2019 00:05:40 INFO] Extracting archive for primitive draw_ellipses.
+[09/05/2019 00:05:45 INFO] Extracting archive for primitive draw_star.
+[09/05/2019 00:05:49 INFO] Extracting archive for primitive draw_checkerboard.
+[09/05/2019 00:05:54 INFO] Extracting archive for primitive draw_stripes.
+[09/05/2019 00:05:59 INFO] Extracting archive for primitive draw_cube.
+[09/05/2019 00:06:04 INFO] Extracting archive for primitive gaussian_noise.
+[09/05/2019 00:06:09 INFO] Caching data, fist access will take some time.
+[09/05/2019 00:06:10 INFO] Caching data, fist access will take some time.
+[09/05/2019 00:06:10 INFO] Caching data, fist access will take some time.
+2019-09-05 00:06:10.722358: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-09-05 00:06:11.045590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-09-05 00:06:11.045642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2019-09-05 00:06:12.677994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-09-05 00:06:12.678071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-09-05 00:06:12.678087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2019-09-05 00:06:12.684508: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:13 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+[09/05/2019 00:06:14 INFO] Scale of 0 disables regularizer.
+2019-09-05 00:06:14.968127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2019-09-05 00:06:14.968194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-09-05 00:06:14.968203: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-09-05 00:06:14.968209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2019-09-05 00:06:14.968540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+[09/05/2019 00:06:21 INFO] Start training
+[09/05/2019 00:06:40 INFO] Iter    0: loss 4.6330, precision 0.0006, recall 0.0626
+[09/05/2019 00:09:44 INFO] Iter 1000: loss 0.8943, precision 0.0019, recall 0.1808
+[09/05/2019 00:12:04 INFO] Iter 2000: loss 0.3126, precision 0.0036, recall 0.3320
+[09/05/2019 00:14:24 INFO] Iter 3000: loss 0.1823, precision 0.0041, recall 0.3723
+[09/05/2019 00:16:37 INFO] Iter 4000: loss 0.1446, precision 0.0889, recall 0.4346
+[09/05/2019 00:18:59 INFO] Iter 5000: loss 0.1107, precision 0.2205, recall 0.4229
+[09/05/2019 00:21:21 INFO] Iter 6000: loss 0.1090, precision 0.2719, recall 0.4921
+[09/05/2019 00:23:44 INFO] Iter 7000: loss 0.0965, precision 0.3136, recall 0.4888
+[09/05/2019 00:26:06 INFO] Iter 8000: loss 0.1124, precision 0.3130, recall 0.4926
+[09/05/2019 00:28:29 INFO] Iter 9000: loss 0.0890, precision 0.2192, recall 0.4485
+[09/05/2019 00:30:51 INFO] Iter 10000: loss 0.0984, precision 0.3624, recall 0.5213
+[09/05/2019 00:33:14 INFO] Iter 11000: loss 0.1104, precision 0.3513, recall 0.5152
+[09/05/2019 00:35:36 INFO] Iter 12000: loss 0.1067, precision 0.3213, recall 0.4796
+[09/05/2019 00:37:59 INFO] Iter 13000: loss 0.1098, precision 0.3629, recall 0.4982
+[09/05/2019 00:40:22 INFO] Iter 14000: loss 0.1290, precision 0.3272, recall 0.5006
+[09/05/2019 00:42:44 INFO] Iter 15000: loss 0.0972, precision 0.3516, recall 0.5171
+[09/05/2019 00:45:07 INFO] Iter 16000: loss 0.0966, precision 0.3014, recall 0.5073
+[09/05/2019 00:47:29 INFO] Iter 17000: loss 0.0961, precision 0.3611, recall 0.5262
+[09/05/2019 00:49:52 INFO] Iter 18000: loss 0.0857, precision 0.3485, recall 0.5125
+[09/05/2019 00:52:15 INFO] Iter 19000: loss 0.1170, precision 0.4023, recall 0.5418
+[09/05/2019 00:54:37 INFO] Iter 20000: loss 0.0957, precision 0.3735, recall 0.5261
+[09/05/2019 00:57:00 INFO] Iter 21000: loss 0.1200, precision 0.4009, recall 0.5725
+[09/05/2019 00:59:23 INFO] Iter 22000: loss 0.0953, precision 0.4142, recall 0.5485
+[09/05/2019 01:01:45 INFO] Iter 23000: loss 0.1082, precision 0.3940, recall 0.5618
+[09/05/2019 01:04:07 INFO] Iter 24000: loss 0.0954, precision 0.3619, recall 0.5583
+[09/05/2019 01:06:30 INFO] Iter 25000: loss 0.0870, precision 0.4086, recall 0.5609
+[09/05/2019 01:08:52 INFO] Iter 26000: loss 0.1059, precision 0.4229, recall 0.5773
+[09/05/2019 01:11:15 INFO] Iter 27000: loss 0.0806, precision 0.4047, recall 0.5719
+[09/05/2019 01:13:38 INFO] Iter 28000: loss 0.0765, precision 0.3877, recall 0.5398
+[09/05/2019 01:16:00 INFO] Iter 29000: loss 0.1002, precision 0.4122, recall 0.5963
+[09/05/2019 01:18:23 INFO] Iter 30000: loss 0.0711, precision 0.3747, recall 0.5263
+[09/05/2019 01:20:46 INFO] Iter 31000: loss 0.0984, precision 0.4147, recall 0.5828
+[09/05/2019 01:23:08 INFO] Iter 32000: loss 0.0918, precision 0.4427, recall 0.6222
+[09/05/2019 01:25:31 INFO] Iter 33000: loss 0.0852, precision 0.3727, recall 0.5175
+[09/05/2019 01:27:54 INFO] Iter 34000: loss 0.1015, precision 0.4786, recall 0.6205
+[09/05/2019 01:30:16 INFO] Iter 35000: loss 0.1002, precision 0.3931, recall 0.5702
+[09/05/2019 01:32:39 INFO] Iter 36000: loss 0.0924, precision 0.3960, recall 0.5496
+[09/05/2019 01:35:01 INFO] Iter 37000: loss 0.0755, precision 0.3702, recall 0.5230
+[09/05/2019 01:37:24 INFO] Iter 38000: loss 0.0725, precision 0.3626, recall 0.5037
+[09/05/2019 01:39:47 INFO] Iter 39000: loss 0.0720, precision 0.3817, recall 0.5271
+[09/05/2019 01:42:09 INFO] Iter 40000: loss 0.0823, precision 0.4875, recall 0.6253
+[09/05/2019 01:44:32 INFO] Iter 41000: loss 0.0898, precision 0.4419, recall 0.5873
+[09/05/2019 01:46:54 INFO] Iter 42000: loss 0.0807, precision 0.4499, recall 0.5676
+[09/05/2019 01:49:17 INFO] Iter 43000: loss 0.0878, precision 0.4331, recall 0.5779
+[09/05/2019 01:51:40 INFO] Iter 44000: loss 0.0916, precision 0.3840, recall 0.5377
+[09/05/2019 01:54:02 INFO] Iter 45000: loss 0.0928, precision 0.4364, recall 0.5948
+[09/05/2019 01:56:25 INFO] Iter 46000: loss 0.0892, precision 0.4698, recall 0.6103
+[09/05/2019 01:58:48 INFO] Iter 47000: loss 0.1048, precision 0.4398, recall 0.5851
+[09/05/2019 02:01:10 INFO] Iter 48000: loss 0.0862, precision 0.4506, recall 0.6013
+[09/05/2019 02:03:33 INFO] Iter 49000: loss 0.0945, precision 0.4578, recall 0.6073
+[09/05/2019 02:05:54 INFO] Training finished
+[09/05/2019 02:05:55 INFO] Saving checkpoint for iteration #50000

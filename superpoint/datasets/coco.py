@@ -38,7 +38,7 @@ class Coco(BaseDataset):
     }
 
     def _init_dataset(self, **config):
-        base_path = Path(DATA_PATH, 'COCO/train2014/')
+        base_path = Path(DATA_PATH, 'cocostuff_water/images/validation')
         image_paths = list(base_path.iterdir())
         if config['truncate']:
             image_paths = image_paths[:config['truncate']]
@@ -64,7 +64,7 @@ class Coco(BaseDataset):
         is_training = split_name == 'training'
 
         def _read_image(path):
-            image = tf.read_file(path)
+            image = tf.io.read_file(path)
             image = tf.image.decode_png(image, channels=3)
             return tf.cast(image, tf.float32)
 
@@ -130,11 +130,12 @@ class Coco(BaseDataset):
         if has_keypoints:
             data = data.map_parallel(pipeline.add_keypoint_map)
         data = data.map_parallel(
-            lambda d: {**d, 'image': tf.to_float(d['image']) / 255.})
+            #lambda d: {**d, 'image': tf.to_float(d['image']) / 255.})
+            lambda d: {**d, 'image': tf.cast(d['image'], tf.float32) / 255.})
         if config['warped_pair']['enable']:
             data = data.map_parallel(
                 lambda d: {
                     **d, 'warped': {**d['warped'],
-                                    'image': tf.to_float(d['warped']['image']) / 255.}})
+                                    'image': tf.cast(d['warped']['image'], tf.float32) / 255.}})
 
         return data

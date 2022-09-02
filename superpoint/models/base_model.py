@@ -102,7 +102,7 @@ class BaseModel(metaclass=ABCMeta):
         self.datasets = data
         self.data_shape = data_shape
         self.n_gpus = n_gpus
-        self.graph = tf.get_default_graph()
+        self.graph = tf.compat.v1.get_default_graph()
         self.name = self.__class__.__name__.lower()  # get child name
         self.trainable = getattr(self, 'trainable', True)
 

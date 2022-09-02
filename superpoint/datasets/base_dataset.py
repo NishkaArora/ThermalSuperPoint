@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 import tensorflow as tf
+# from tf import compat.v1.data.make_one_shot_iterator as make_one_shot_iterator
 
 from superpoint.utils.tools import dict_update
 
@@ -106,9 +107,11 @@ class BaseDataset(metaclass=ABCMeta):
         with tf.device('/cpu:0'):
             for n in self.split_names:
                 self.tf_splits[n] = self._get_data(self.dataset, n, **self.config)
-                self.tf_next[n] = self.tf_splits[n].make_one_shot_iterator().get_next()
+                
+                self.tf_next[n] = iter(self.tf_splits[n]).__next__()
+        tf.compat.v1.disable_eager_execution()
         self.end_set = tf.errors.OutOfRangeError
-        self.sess = tf.Session()
+        self.sess = tf.compat.v1.Session()
 
     def _get_set_generator(self, set_name):
         while True:

@@ -33,7 +33,7 @@ if __name__ == '__main__':
         checkpoint = Path(checkpoint, config['checkpoint'])
 
     config['model']['pred_batch_size'] = batch_size
-    batch_size *= experiment.get_num_gpus()
+    # batch_size *= experiment.get_num_gpus() ### no GPUs configured on this machine
 
     with experiment._init_graph(config, with_dataset=True) as (net, dataset):
         if net.trainable:

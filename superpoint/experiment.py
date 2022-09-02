@@ -54,11 +54,13 @@ def predict(config, output_dir, n_iter):
 
 
 def set_seed(seed):
-    tf.set_random_seed(seed)
+    #tf.set_random_seed(seed)
+    tf.random.set_seed(seed)
     np.random.seed(seed)
 
 
 def get_num_gpus():
+    print(os.environ)
     return len(os.environ['CUDA_VISIBLE_DEVICES'].split(','))
 
 
@@ -71,7 +73,7 @@ def _init_graph(config, with_dataset=False):
     dataset = get_dataset(config['data']['name'])(**config['data'])
     model = get_model(config['model']['name'])(
             data={} if with_dataset else dataset.get_tf_datasets(),
-            n_gpus=n_gpus, **config['model'])
+            n_gpus=n_gpus, **config['model']) # replace n_gpus with 0 to run on CPU - does not work
     model.__enter__()
     if with_dataset:
         yield model, dataset
